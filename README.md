@@ -49,7 +49,7 @@ For all of the dependencies, please refer to ` XXX/app/requirements `.
 
 **Demo**:
 
-![haystack-api demo](resource\haystack-api_demo.gif)
+![haystack-api demo](https://raw.githubusercontent.com/smbinnovationlab/haystack/master/resource/haystack-api_demo.gif)
 
 **Steps**:
 
