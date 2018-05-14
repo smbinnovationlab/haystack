@@ -1,0 +1,38 @@
+version: '2'
+services:
+  db:
+    image: mysql:5.6
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: haystack
+      MYSQL_ROOT_PASSWORD: test
+    volumes:
+      - ./mysql/conf:/etc/mysql/mysql.conf.d
+      - ./mysql/dump:/docker-entrypoint-initdb.d
+      - ./mysql/data:/var/lib/mysql
+    restart: always
+  server:
+    build: ./app
+    volumes:
+      - ./app:/src/haystack/app
+      - ./data/pic:/src/haystack/data/pic
+      - ./data/raw:/src/haystack/data/raw
+    ports:
+      - "5001:5001"
+    links:
+      - db:db
+    command: >
+      bash -c "echo ${KEY} > /src/haystack/app/conf/google_api_key.txt &&
+      uwsgi --http :5001 --chdir /src/haystack/app --wsgi-file app_web.py --callable app_web --master --processes 4 --threads 2"
+    restart: always
+  app:
+    build: ./static
+    ports:
+      - "8001:80"
+    volumes:
+      - ./static:/src/html/haystack_app
+      - ./data/pic:/src/html/haystack_app/src/pic
+    links:
+      - server:server
+    restart: always

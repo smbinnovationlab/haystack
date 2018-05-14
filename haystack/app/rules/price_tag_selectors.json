@@ -1,0 +1,74 @@
+{
+  "containers": ["div", "span", "h1", "h2", "h3", "h4", "td"],
+  "selectors": [
+    {"selector": "[itemprop=\"price\"]", "weight": 1.0},
+
+    {"selector": "[class=\"sku-price\"]", "weight": 0.9},
+    {"selector": "[class=\"skuPrice\"]", "weight": 0.9},
+    {"selector": "[id=\"sku-price\"]", "weight": 0.9},
+    {"selector": "[id=\"skuPrice\"]", "weight": 0.9},
+
+    {"selector": "[class=\"product-price\"]", "weight": 0.7},
+    {"selector": "[class=\"productPrice\"]", "weight": 0.7},
+    {"selector": "[class=\"ProductPrice\"]", "weight": 0.7},
+    {"selector": "[id=\"product-price\"]", "weight": 0.7},
+    {"selector": "[id=\"productPrice\"]", "weight": 0.7},
+    {"selector": "[id=\"ProductPrice\"]", "weight": 0.7},
+    {"selector": "[class*=\"product\"][class*=\"price\"]", "weight": 0.6},
+    {"selector": "[class*=\"Product\"][class*=\"price\"]", "weight": 0.6},
+    {"selector": "[class*=\"product\"][class*=\"Price\"]", "weight": 0.6},
+    {"selector": "[class*=\"Product\"][class*=\"Price\"]", "weight": 0.6},
+    {"selector": "[id*=\"product\"][id*=\"price\"]", "weight": 0.6},
+    {"selector": "[id*=\"Product\"][id*=\"price\"]", "weight": 0.6},
+    {"selector": "[id*=\"product\"][id*=\"Price\"]", "weight": 0.6},
+    {"selector": "[id*=\"Prodouct\"][id*=\"Price\"]", "weight": 0.6},
+    {"selector": "[class=\"prod-price\"]", "weight": 0.7},
+    {"selector": "[class=\"prodPrice\"]", "weight": 0.7},
+    {"selector": "[class=\"ProdPrice\"]", "weight": 0.7},
+    {"selector": "[id=\"prod-price\"]", "weight": 0.7},
+    {"selector": "[id=\"prodPrice\"]", "weight": 0.7},
+    {"selector": "[id=\"ProdPrice\"]", "weight": 0.7},
+
+    {"selector": "[class=\"item-price\"]", "weight": 0.7},
+    {"selector": "[class=\"itemPrice\"]", "weight": 0.7},
+    {"selector": "[class=\"ItemPrice\"]", "weight": 0.7},
+    {"selector": "[id=\"item-price\"]", "weight": 0.7},
+    {"selector": "[id=\"itemPrice\"]", "weight": 0.7},
+    {"selector": "[id=\"ItemPrice\"]", "weight": 0.7},
+
+    {"selector": "[class=\"current-price\"]", "weight": 0.8},
+    {"selector": "[class=\"currentPrice\"]", "weight": 0.8},
+    {"selector": "[class=\"CurrentPrice\"]", "weight": 0.8},
+    {"selector": "[id=\"current-price\"]", "weight": 0.8},
+    {"selector": "[id=\"currentPrice\"]", "weight": 0.8},
+    {"selector": "[id=\"CurrentPrice\"]", "weight": 0.8},
+    {"selector": "[ng-bind-html=\"currentPrice\"]", "weight": 0.9},
+
+    {"selector": "[class=\"total-price\"]", "weight": 0.5},
+    {"selector": "[class=\"totalPrice\"]", "weight": 0.5},
+    {"selector": "[class=\"TotalPrice\"]", "weight": 0.5},
+    {"selector": "[id=\"total-price\"]", "weight": 0.5},
+    {"selector": "[id=\"totalPrice\"]", "weight": 0.5},
+    {"selector": "[id=\"TotalPrice\"]", "weight": 0.5},
+
+    {"selector": "[class=\"our-price\"]", "weight": 0.6},
+    {"selector": "[class=\"ourPrice\"]", "weight": 0.6},
+    {"selector": "[class=\"OurPrice\"]", "weight": 0.6},
+    {"selector": "[id=\"our-price\"]", "weight": 0.6},
+    {"selector": "[id=\"ourPrice\"]", "weight": 0.6},
+    {"selector": "[id=\"OurPrice\"]", "weight": 0.6},
+
+    {"selector": "[class=\"price-label\"]", "weight": 0.2},
+    {"selector": "[class=\"priceLabel\"]", "weight": 0.2},
+    {"selector": "[class=\"PriceLabel\"]", "weight": 0.2},
+    {"selector": "[id=\"price-label\"]", "weight": 0.2},
+    {"selector": "[id=\"priceLabel\"]", "weight": 0.2},
+    {"selector": "[id=\"PriceLabel\"]", "weight": 0.2},
+
+    {"selector": "[class*=\"pPrice\"]", "wight": 0.4},
+    {"selector": "[id*=\"pPrice\"]", "wight": 0.4},
+
+    {"selector": "[class=\"price\"]", "weight": 0.1},
+    {"selector": "[id=\"price\"]", "weight": 0.1}
+  ]
+}

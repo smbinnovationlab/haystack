@@ -1,0 +1,10 @@
+*
+
+!.gitignore
+!/**/*.py
+!/**/*.md
+
+!/data
+#!/data/*.txt
+!/tmp
+!/tmp/model.pkl

@@ -1,0 +1,74 @@
+.ant-tag-checkable {
+  width: 208px !important;
+  height: 48px !important;
+  margin-top: 30px !important;
+  line-height: 48px !important;
+  text-align: center !important;
+  background-color: #ffffff !important;
+  color: #37474f !important;
+  border-radius: 41px !important;
+  border-color: #37474f !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  opacity: 0.5 !important;
+}
+.ant-tag-checkable:not(.ant-tag-checkable-checked):hover,
+.ant-tag-checkable:active,
+.ant-tag-checkable-checked {
+  border-width: 2px !important;
+  opacity: 1.0  !important;
+  width: 208px !important;
+  height: 48px !important;
+  line-height: 48px !important;
+}
+.ant-tag {
+  -webkit-transition: all 0.1s ease !important;
+  transition: all 0.1s ease !important;
+}
+.ant-tabs-tab {
+  opacity: 0.5 !important;
+  font-family: BentonSans-Medium !important;
+  font-size: 20px !important;
+  color: #37474f !important;
+  letter-spacing: 0.32px !important;
+}
+.ant-tabs-tab-active {
+  opacity: 1.0 !important;
+}
+.ant-tabs-ink-bar {
+  background-color: #37474f !important;
+}
+.ant-table-small {
+  border: 0 !important;
+}
+.ant-table-tbody > tr > td {
+  border-bottom: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
+}
+.ant-modal-content {
+  background: #fafafa !important;
+}
+.ant-modal-close-x {
+  font-size: 24px !important;
+}
+.vertical-center-modal {
+  text-align: center;
+  white-space: nowrap;
+}
+.vertical-center-modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+.vertical-center-modal .ant-modal {
+  display: inline-block;
+  vertical-align: middle;
+  top: 0;
+  text-align: left;
+}
+.ant-table {
+  border-radius: 0 !important;
+}

@@ -1,0 +1,32 @@
+.logo {
+	height: 48px;
+	background: #333;
+	border-radius: 6px;
+	margin: 16px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 48px;
+	text-align: center;
+}
+
+.add-product-box {
+	width: 50%;
+	margin: 160px auto;
+}
+
+.upload-picture-box {
+	width: 60%;
+	margin: 160px auto;
+}
+
+.analysis-box {
+	width: 80%;
+	margin: 160px auto;
+	border: 1px solid #EEE;
+	padding-top: 48px;
+}
+
+.refresh-box {
+	width: 70%;
+	margin: 0 auto;
+}

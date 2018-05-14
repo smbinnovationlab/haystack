@@ -1,0 +1,1014 @@
+{
+  "amazon.ca": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[id^=\"priceblock_\"][id$=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "CDN$",
+    "country": "Canada"
+  },
+
+  "amazon.co.jp": [{
+    "list": [
+      {
+        "selector": "ul[id=\"s-results-list-atf\"]",
+        "item_selector": "li[id^=\"result_\"]",
+        "item_description": {
+          "selector": "a[class*=\"a-link-normal\"][class*=\"s-access-detail-page\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "item_price": {
+          "selector": "span[class*=\"s-price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[id^=\"priceblock_\"][id$=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "JPY",
+    "country": "Japan"
+  }],
+
+  "amazon.co.uk": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[id^=\"priceblock_\"][id$=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "GBP",
+    "country": "UK"
+  },
+  
+  "amazon.com": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[id^=\"priceblock_\"][id$=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "amazon.in": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[id^=\"priceblock_\"][id$=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "INR",
+    "country": "India"
+  },
+
+  "bestpricenutrition.com": {
+    "list": [
+      {
+        "selector": "ul[class*=\"products-grid\"]",
+        "item_selector": "div[class=\"item-area\"]",
+        "item_description": {
+          "selector": "h2[class=\"product-name\"]",
+          "in_attr": true,
+          "attr": "title",
+          "filter": false,
+          "children": true
+        },
+        "item_price": {
+          "selector": "span[class=\"price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[id^=\"product-price-\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": true
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "blue-9.com": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[id=\"pd_price_var\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "chemistextra.co.uk": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "meta[itemprop=\"price\"]",
+        "in_attr": true,
+        "attr": "content",
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "GBP",
+    "country": "UK"
+  },
+
+  "doggie-zen.se": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[ng-bind-html=\"currentPrice\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "SEK",
+    "country": "Sweden"
+  },
+
+  "ebay.ie": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[itemprop=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "EUR",
+    "country": "Ireland"
+  },
+
+  "elitek9.com": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "td[class=\"ProductPrice\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": true
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "familygreenstore.com": {
+    "list": [
+      {
+        "selector": "ul[class*=\"products-grid\"]",
+        "item_selector": "li[class=\"item\"]",
+        "item_description": {
+          "selector": "h2[class=\"product-name\"]",
+          "in_attr": true,
+          "attr": "title",
+          "filter": false,
+          "children": true
+        },
+        "item_price": {
+          "selector": "span[id^=\"product-price-\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": true
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[id^=\"product-price-\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": true
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "for-sale.ie": {
+    "list": [
+      {
+        "selector": "div[class=\"wrapp_list_grid jsListItems list_style\"]",
+        "item_selector": "div[class*=\"box_product_item\"]",
+        "item_description": {
+          "selector": "h2",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "item_price": {
+          "selector": "span[class=\"price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {},
+    "currency": "EUR",
+    "country": "Ireland"
+  },
+
+  "free-spirits.co.jp": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[class=\"itemPrice\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "JPY",
+    "country": "Japan"
+  },
+
+  "fribbla.co.uk": {
+    "list": [
+      {
+        "selector": "div[id=\"addHere\"]",
+        "item_selector": "div[class=\"col-sm-4\"]",
+        "item_description": {
+          "selector": "img[data-src*=\"amazon\"]",
+          "in_attr": true,
+          "attr": "alt",
+          "filter": false,
+          "children": false
+        },
+        "item_price": {
+          "selector": "center",
+          "in_attr": false,
+          "filter": true,
+          "filter_re": "^<span.*",
+          "filter_in_attr": false,
+          "children": true
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {},
+    "currency": "GBP",
+    "country": "UK"
+  },
+
+  "global.rakuten.com": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "meta[itemprop=\"price\"]",
+        "in_attr": true,
+        "attr": "content",
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "CNY",
+    "country": "Korea"
+  },
+
+  "globes.co.uk": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[id^=\"product-price-\"]",
+        "in_attr": false,
+        "filter": true,
+        "filter_re": "\\w*-\\w*-\\d+$",
+        "filter_in_attr": true,
+        "filter_attr": "id",
+        "children": true
+      },
+      "type": "eCommerce"
+    },
+    "currency": "GBP",
+    "country": "UK"
+  },
+
+  "goodshepardorganics.com": {
+    "list": [
+      {
+        "selector": "div[id*=\"Catalog\"][id*=\"Container\"]",
+        "item_selector": "div[class=\"ItemTemplate\"]",
+        "item_description": {
+          "selector": "div[class=\"item-title\"]",
+          "in_attr": true,
+          "attr": "title",
+          "filter": false,
+          "children": true
+        },
+        "item_price": {
+          "selector": "span[id*=\"RoundedPrice_\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[id=\"ContentPlaceHolder1_lblRoundedPrice\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "haces.com.tw": {
+    "list": [
+      {
+        "selector": "div[id=\"product-loop\"]",
+        "item_selector": "div[id^=\"prod-\"]",
+        "item_description": {
+          "selector": "div[id^=\"prod-\"]",
+          "in_attr": true,
+          "attr": "data-alpha",
+          "filter": false,
+          "children": false
+        },
+        "item_price": {
+          "selector": "div[class=\"prod-price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[itemprop=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "TWD",
+    "country": "China"
+  },
+
+  "hannisballshop.de": {
+    "list": [
+      {
+        "selector": "div[id^=\"cc-matrix-\"]",
+        "item_selector": "div[id^=\"cc-m-product-\"]",
+        "item_description": {
+          "selector": "h4[itemprop=\"name\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "item_price": {
+          "selector": "p[itemprop=\"price\"]",
+          "in_attr": true,
+          "attr": "content",
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {},
+    "currency": "EUR",
+    "country": "Germany"
+  },
+
+  "healthvital.co.uk": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "h2[id=\"productPrices\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "GBP",
+    "country": "UK"
+  },
+
+  "herbsdirect.com": {
+    "list": [
+      {
+        "selector": "div[class*=\"grid-link__container\"]",
+        "item_selector": "div[class*=\"grid__item\"][class*=\"on-sale\"]",
+        "item_description": {
+          "selector": "p[class=\"grid-link__title\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "item_price": {
+          "selector": "s[class=\"grid-link__sale_price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[itemprop=\"price\"]",
+        "in_attr": true,
+        "attr": "content",
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "hollandandbarrett.com": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[class=\"sku-price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "GBP",
+    "country": "Ireland"
+  },
+
+  "ipumpshop.com": {
+    "list": [
+      {
+        "selector": "ul[class=\"products-grid\"]",
+        "item_selector": "li[class*=\"item\"]",
+        "item_description": {
+          "selector": "h2[class=\"product-name\"]",
+          "in_attr": true,
+          "attr": "title",
+          "filter": false,
+          "children": true
+        },
+        "item_price": {
+          "selector": "span[class=\"price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "meta[itemprop=\"price\"]",
+        "in_attr": true,
+        "attr": "content",
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "jjdog.com": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[itemprop=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "justglobes.co.uk": {
+    "list": [
+      {
+        "selector": "div[class=\"category-products\"]",
+        "item_selector": "li[class=\"item last\"]",
+        "item_description": {
+          "selector": "h2[class=\"product-name\"]",
+          "in_attr": true,
+          "attr": "title",
+          "filter": false,
+          "children": true
+        },
+        "item_price": {
+          "selector": "span[itemprop=\"price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[itemprop=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "GBP",
+    "country": "UK"
+  },
+
+  "k9gunnertactical.com": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "h4[id$=\"_pPrice\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "milltownorganics.com": {
+    "list": [
+      {
+        "selector": "div[id*=\"Catalog\"][id*=\"Container\"]",
+        "item_selector": "div[class=\"ItemTemplate\"]",
+        "item_description": {
+          "selector": "div[class=\"item-title\"]",
+          "in_attr": true,
+          "attr": "title",
+          "filter": false,
+          "children": true
+        },
+        "item_price": {
+          "selector": "span[id*=\"RoundedPrice_\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[id=\"ContentPlaceHolder1_lblRoundedPrice\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "missionworkshop.com": {
+    "list": [
+      {
+        "selector": "ul[class=\"collection-infinite\"]",
+        "item_selector": "div[class*=\"col-product\"]",
+        "item_description": {
+          "selector": "p[class=\"grid-link__title\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "item_price": {
+          "selector": "span[class=\"money\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[id=\"total-price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "mysupplementstore.com": {
+    "list": [
+      {
+        "selector": "ul[class*=\"products-grid\"]",
+        "item_selector": "li[class*=\"item\"]",
+        "item_description": {
+          "selector": "h2[class=\"product-name\"]",
+          "in_attr": true,
+          "attr": "title",
+          "filter": false,
+          "children": true
+        },
+        "item_price": {
+          "selector": "span[class=\"price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "meta[itemprop=\"price\"]",
+        "in_attr": true,
+        "attr": "content",
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "orgavana.com": {
+    "list": [
+      {
+        "selector": "ul[id=\"catalog-listing\"]",
+        "item_selector": "li[class*=\"item\"]",
+        "item_description": {
+          "selector": "h6[class=\"item-title\"]",
+          "in_attr": true,
+          "attr": "title",
+          "filter": false,
+          "children": true
+        },
+        "item_price": {
+          "selector": "span[class=\"price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[id^=\"product-price-\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": true
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "petherbsdirect.com": {
+    "list": [
+      {
+        "selector": "div[class*=\"grid-link__container\"]",
+        "item_selector": "div[class*=\"grid__item\"][class*=\"on-sale\"]",
+        "item_description": {
+          "selector": "p[class=\"grid-link__title\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "item_price": {
+          "selector": "s[class=\"grid-link__sale_price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[itemprop=\"price\"]",
+        "in_attr": true,
+        "attr": "content",
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "rayallen.com": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[itemprop=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "rozgarpakistan.com": {
+    "list": [
+      {
+        "selector": "div[class*=\"catalog-ordering\"]",
+        "item_selector": "li[class^=\"post-\"][class*=\"product\"]",
+        "item_description": {
+          "selector": "h3[class=\"product-title\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": true
+        },
+        "item_price": {
+          "selector": "span[class=\"woocommerce-Price-amount amount\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[class=\"woocommerce-Price-amount amount\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "stanfords.co.uk": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[itemprop=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "GBP",
+    "country": "UK"
+  },
+
+  "stores.ebay.co.uk": {
+    "list": [
+      {
+        "selector": "div[class=\"rs_box\"]",
+        "item_selector": "td[itemscope=\"itemscope\"]",
+        "item_description": {
+          "selector": "a[itemprop=\"name\"]",
+          "in_attr": true,
+          "attr": "title",
+          "filter": false,
+          "children": false
+        },
+        "item_price": {
+          "selector": "span[itemprop=\"price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {},
+    "currency": "EUR",
+    "country": "UK"
+  },
+
+  "stores.ebay.de": {
+    "list": [
+      {
+        "selector": "div[class=\"rs_box\"]",
+        "item_selector": "td[itemscope=\"itemscope\"]",
+        "item_description": {
+          "selector": "a[itemprop=\"name\"]",
+          "in_attr": true,
+          "attr": "title",
+          "filter": false,
+          "children": false
+        },
+        "item_price": {
+          "selector": "span[itemprop=\"price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {},
+    "currency": "EUR",
+    "country": "Germany"
+  },
+
+  "stores.ebay.ie": {
+    "list": [
+      {
+        "selector": "div[class=\"rs_box\"]",
+        "item_selector": "td[itemscope=\"itemscope\"]",
+        "item_description": {
+          "selector": "a[itemprop=\"name\"]",
+          "in_attr": true,
+          "attr": "title",
+          "filter": false,
+          "children": false
+        },
+        "item_price": {
+          "selector": "span[itemprop=\"price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {},
+    "currency": "EUR",
+    "country": "Ireland"
+  },
+
+  "squirrelsandmore.com": {
+    "list": [
+      {
+        "selector": "div[class=\"collection-main\"]",
+        "item_selector": "span[class=\"product-title\"]",
+        "item_description": {
+          "selector": "span[class=\"title\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "item_price": {
+          "selector": "span[class=\"price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[itemprop=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "thenz.co.nz": {
+    "list": [],
+    "item": {
+      "price": {
+        "selector": "span[itemprop=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "New Zealand"
+  },
+
+  "totalhealthapothecary.com": {
+    "list": [
+      {
+        "selector": "div[id=\"wsite-com-product-list\"]",
+        "item_selector": "div[class*=\"wsite-com-category-product-wrap\"]",
+        "item_description": {
+          "selector": "div[class*=\"wsite-com-category-product-name\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "item_price": {
+          "selector": "div[class*=\"wsite-com-sale-price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {
+      "price": {
+        "selector": "span[itemprop=\"price\"]",
+        "in_attr": false,
+        "filter": false,
+        "children": false
+      },
+      "type": "eCommerce"
+    },
+    "currency": "USD",
+    "country": "US"
+  },
+
+  "216.92.212.23": {
+    "list": [
+      {
+        "selector": "div[class=\"section-content\"]",
+        "item_selector": "form[name^=\"productForm\"]",
+        "item_description": {
+          "selector": "div[class=\"section-product-title\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": true
+        },
+        "item_price": {
+          "selector": "span[class=\"price\"]",
+          "in_attr": false,
+          "filter": false,
+          "children": false
+        },
+        "type": "Collection"
+      }
+    ],
+    "item": {},
+    "currency": "USD",
+    "country": "US"
+  }
+}

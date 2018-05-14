@@ -1,0 +1,5 @@
+*/node_modules/
+*/package-lock.json
+haystack/src/pic/product_main/*
+haystack/src/pic/screenshot/*
+haystack_api/src/pic/*

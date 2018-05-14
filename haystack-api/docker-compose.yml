@@ -1,0 +1,103 @@
+version: '2'
+services:
+  db:
+    image: mysql:5.6
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: haystack_api
+      MYSQL_ROOT_PASSWORD: test
+    volumes:
+      - ./mysql/conf:/etc/mysql/mysql.conf.d
+      - ./mysql/dump:/docker-entrypoint-initdb.d
+      - ./mysql/data:/var/lib/mysql
+    restart: always
+  mq:
+    image: rabbitmq:3.6.14-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  web_server:
+    build: ./app
+    depends_on:
+      - db
+      - mq
+    volumes:
+      - ./app:/src/haystack/app
+      - ./data/pic:/src/haystack/data/pic
+      - ./data/raw:/src/haystack/data/raw
+      - ./data/tmp:/src/haystack/data/tmp
+    ports:
+      - "5004:5004"
+    links:
+      - db:api_db
+      - mq:mq
+    command: >
+      bash -c "echo ${KEY} > /src/haystack/app/conf/google_api_key.txt &&
+      uwsgi --http :5004 --chdir /src/haystack/app --wsgi-file app_web_server.py --callable app_web_server --master --processes 4 --threads 2"
+    restart: always
+  image_searching_engine:
+    image: haystackapi_web_server
+    volumes:
+      - ./app:/src/haystack/app
+      - ./data/pic:/src/haystack/data/pic
+      - ./data/raw:/src/haystack/data/raw
+      - ./data/tmp:/src/haystack/data/tmp
+    links:
+      - db:api_db
+      - mq:mq
+      - web_server:web_server
+    working_dir: /src/haystack/app/job_server
+    command: python image_searching_engine.py
+    restart: always
+  microdata_analyzer:
+    image: haystackapi_web_server
+    volumes:
+      - ./app:/src/haystack/app
+      - ./data/pic:/src/haystack/data/pic
+      - ./data/raw:/src/haystack/data/raw
+      - ./data/tmp:/src/haystack/data/tmp
+    links:
+      - db:api_db
+      - mq:mq
+      - web_server:web_server
+    working_dir: /src/haystack/app/job_server
+    command: python microdata_analyzer.py
+    restart: always
+  url_pattern_analyzer:
+    image: haystackapi_web_server
+    volumes:
+      - ./app:/src/haystack/app
+      - ./data/pic:/src/haystack/data/pic
+      - ./data/raw:/src/haystack/data/raw
+      - ./data/tmp:/src/haystack/data/tmp
+    links:
+      - db:api_db
+      - mq:mq
+      - web_server:web_server
+    working_dir: /src/haystack/app/job_server
+    command: python url_pattern_analyzer.py
+    restart: always
+  multi_pattern_analyzer:
+    image: haystackapi_web_server
+    volumes:
+      - ./app:/src/haystack/app
+      - ./data/pic:/src/haystack/data/pic
+      - ./data/raw:/src/haystack/data/raw
+      - ./data/tmp:/src/haystack/data/tmp
+    links:
+      - db:api_db
+      - mq:mq
+      - web_server:web_server
+    working_dir: /src/haystack/app/job_server
+    command: python multi_pattern_analyzer.py
+    restart: always
+  app:
+    build: ./static
+    ports:
+      - "8002:80"
+    volumes:
+      - ./static:/src/html/haystack_app
+    links:
+      - web_server:web_server
+    restart: always

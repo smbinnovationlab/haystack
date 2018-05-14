@@ -1,0 +1,93 @@
+.pop-box {
+	width: 870px;
+	height: 600px;
+	padding: 40px 16px 8px 16px;
+	text-align: left;
+}
+
+.pop-image-box {
+	width: 400px;
+	height: 510px;
+	position: absolute;
+	border: 1px solid #979797;
+	background-size: cover;
+	background-position: 50%;
+}
+
+.pop-content {
+	width: 350px;
+	position: absolute;
+	left: 460px;
+}
+
+.pop-text {
+	font-size: 18px;
+	color: #37474f;
+	margin-bottom: 16px;
+}
+
+.pop-url-box {
+	height: 40px;
+	margin-bottom: 16px;
+	white-space: normal;
+	word-break: break-all;
+	overflow: hidden;
+}
+
+.pop-url {
+	font-size: 13px;
+	color: #37474f;
+	text-decoration: underline;
+}
+
+.pop-name {
+	font-size: 18px;
+	color: #37474f;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	margin-bottom: 16px;
+}
+
+.pop-price {
+	font-size: 26px;
+	font-weight: bolder;
+	color: #37474f;
+}
+
+.pop-price-compare {
+	font-size: 18px;
+	font-weight: bold;
+	color: #ff7000;
+}
+
+.pop-info-box {
+	height: 224px;
+	padding: 16px 24px;
+	background: #ffffff;
+	font-size: 16px;
+	color: #37474f;
+	margin-bottom: 16px;
+}
+
+.pop-btn {
+	height: 44px;
+	background: #fafafa;
+	border: 2px solid #37474f;
+	border-radius: 36px;
+	line-height: 34px;
+	font-size: 17px;
+	font-family: BentonSans-Regular;
+	color: #37474f;
+	letter-spacing: 0.35px;
+	float: left;
+}
+
+.pop-chart-pagination {
+	width: 100%;
+	height: 32px;
+	text-align: right;
+	padding-top: 4px;
+	background: #fff;
+	margin-bottom: 16px;
+}

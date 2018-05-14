@@ -1,0 +1,20 @@
+# PyCharm
+.idea/
+__pycache__/
+
+# Python
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# My project
+*.log
+app/tmp/*
+app/backup/*
+data/pic/google_vision/*
+data/pic/product_upload/*
+data/raw/*
+data/tmp/*
