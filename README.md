@@ -1,4 +1,4 @@
-![The SAP Product Haystack](resource\The SAP Product Haystack.png)
+![The SAP Product Haystack](https://raw.githubusercontent.com/smbinnovationlab/haystack/master/resource/The%20SAP%20Product%20Haystack.png)
 
 ***
 
